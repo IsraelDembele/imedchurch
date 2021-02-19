@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var i = 0;
 var images = [];
 var time = 3000;    
@@ -22,7 +22,7 @@ setTimeout("changeImg()", time)
 
 };
 window.onload = changeImg;
-=======
+
 var i = 0;
 var images = [];
 var time = 3000;    
@@ -45,5 +45,5 @@ i++;
 setTimeout("changeImg()", time)
 
 };
-window.onload = changeImg;
->>>>>>> 11ebfea1e6cc5528d2e94b319adc01c82e847fbe
+window.onload = changeImg; 
+

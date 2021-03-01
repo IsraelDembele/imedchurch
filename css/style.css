@@ -190,13 +190,26 @@ p a:hover,
 #body div#newsblog div.sidebar div ul li a:hover {
 	text-decoration: underline;
 }
+
+.contact{
+	border-top: 1px solid #00c6ff;
+	border-bottom: 1px solid #00c6ff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 7px;
+	min-width: 950px;
+}
+
 #body div.body {
 	/* background: #5a9ed4; */
 	border-top: 1px solid #00c6ff;
 	border-bottom: 1px solid #00c6ff;
 	margin: 23px 0 0;
 	padding: 23px 0 45px; 
-	height: 350px;
+	/* height: 350px; */
 }
  /* #body div.body div {
 	margin: 0 auto;
@@ -257,14 +270,35 @@ p a:hover,
 #body div#getinvolved div:first-child div.sidebar div:first-child h2 a:hover {
 	color: #ffffff;
 }
-#body div.body div div.news {
-	float: left;
-	margin: 0 0 0 150px;
+.news {
+	/* float: left; */
+	/* margin: 0 0 0 150px; */
 	padding: 12px 10px 0;
-	width: 340px; 
+	min-width: 340px; 
 	height:380px ; 
 	border-radius: 10px !important; 
 	background-color: #d9d9d9;
+	margin: 7px; 
+}
+
+.news h2{
+	color: chocolate;
+	font-family: 'Conv_BreeSerif-Regular';
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0;
+	text-transform: uppercase; 
+	text-align: center;
+}
+
+.help h2{
+	color: chocolate;
+	font-family: 'Conv_BreeSerif-Regular';
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0;
+	text-transform: uppercase; 
+	text-align: center;
 }
 #body div.body div div.news h2,
 #body div.body div div.help h2,
@@ -277,10 +311,22 @@ p a:hover,
 	text-transform: uppercase; 
 	text-align: center;
 }
+
+.news ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 #body div.body div div.news ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.news ul li{
+	border-top: 1px solid #044975;
+	padding: 14px 0;
 }
 #body div.body div div.news ul li {
 	border-top: 1px solid #044975;
@@ -290,11 +336,23 @@ p a:hover,
 	border: none;
 	padding: 0 0 14px;
 }
+.news ul li span.date{
+	color: #679abb;
+	font-size: 12px;
+	line-height: 24px;
+}
 #body div.body div div.news ul li span.date,
 #body div#getinvolved div:first-child div.sidebar div span.date {
 	color: #679abb;
 	font-size: 12px;
 	line-height: 24px;
+}
+.news ul li h3{
+	font-family: 'Conv_BreeSerif-Regular';
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0;
 }
 #body div.body div div.news ul li h3,
 #body div.body div div.help h3,
@@ -304,6 +362,11 @@ p a:hover,
 	font-weight: normal;
 	line-height: 24px;
 	margin: 0;
+}
+.news ul li h3 a{
+	color: #74c4d4;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 #body div.body div div.news ul li h3 a,
 #body div.body div div.help h3 a,
@@ -316,6 +379,12 @@ p a:hover,
 #body div.body div div.help h3 a:hover,
 #body div#getinvolved div:first-child div.sidebar div h3 a:hover {
 	text-decoration: underline;
+}
+.news ul li p{
+	color: #679abb;
+	float: none;
+	padding: 0;
+	width: auto;
 }
 #body div.body div div.news ul li p,
 #body div.body div div.help p,
@@ -369,8 +438,19 @@ p a:hover,
 #body div#campaigns div.footer a:hover {
 	color: #073959;
 }
+
+.help{
+	padding: 12px 9px 0;
+	min-width: 340px; 
+	height: 380px; 
+	margin: 7px; 
+	/* margin-right: 150px; */
+	border-radius: 10px !important; 
+	background-color: #d9d9d9;;
+}
+
 #body div.body div div.help {
-	float: right;
+	/* float: right; */
 	padding: 12px 9px 0;
 	width: 340px; 
 	height: 380px;  
@@ -954,13 +1034,12 @@ p a:hover,
 	width: 60px;
 } 
 .img-fluid{
-    width: 60%;
-   max-height: 30em !important;
+    /* width: 60%; */
+   	max-height: 30em !important;
     padding: 0%;
-    margin-right: 10px;
-    margin-left: 70px;
-    /* max-width: 100%;  */
-	/* height: auto; */
+    margin: 7px;
+	min-width: 550px;
+	/* max-width: 550px; */
 }
 .centered{
     position: absolute;

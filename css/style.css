@@ -5,8 +5,9 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	margin: 0;
-	min-width: 940px;
+	/* min-width: 940px; */
 	padding: 0;
+	overflow-x: hidden;
 } 
 
 @font-face {
@@ -93,7 +94,9 @@ p a:hover,
 }
 #body {
 	/* background: #f1f2f2 url(../images/bg-content.png) repeat-x left bottom; */
-	padding: 11px 0 20px;
+	/* padding: 11px 0 20px; */
+	/* position: relative; */
+	background: url(../images/bg.png) left top repeat;
 }
 /* #body div.header { */
 	/* background: url(../images/bg-featured.png) repeat-x; */
@@ -279,6 +282,7 @@ p a:hover,
 	border-radius: 10px !important; 
 	background-color: #d9d9d9;
 	margin: 7px; 
+	flex-wrap: nowrap;
 }
 
 .news h2{
@@ -446,7 +450,8 @@ p a:hover,
 	margin: 7px; 
 	/* margin-right: 150px; */
 	border-radius: 10px !important; 
-	background-color: #d9d9d9;;
+	background-color: #d9d9d9;
+	flex-wrap: nowrap;
 }
 
 #body div.body div div.help {
@@ -1039,7 +1044,6 @@ p a:hover,
     padding: 0%;
     margin: 7px;
 	min-width: 550px;
-	/* max-width: 550px; */
 }
 .centered{
     position: absolute;
@@ -1076,6 +1080,7 @@ display: inline;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: large; 
 	color: black;
+	font-size: 1.2rem;
 } 
 .getus{
 	display: flex; 
@@ -1140,3 +1145,16 @@ padding-right: 30%;
 	padding: 10px; 
 	padding: 15 0 0 5px;
 }
+
+.pastor-img{
+	margin: 7px; min-width: 340px; height: 420px
+}
+
+@media only screen and (max-width: 1000px) {
+	.pastor-img{
+		margin: 7px; min-width: unset; width: 75%; height: unset;
+	}
+	.imedNJ{
+		font-size: 1.5rem;
+	}
+  }
